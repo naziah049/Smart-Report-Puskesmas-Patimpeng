@@ -2,7 +2,7 @@
     <div class="sidebar-header">
         <a href="#" class="sidebar-brand" style="display: flex; align-items: center;">
             <img src="{{ asset('assets/images/logo.png') }}" alt="logo" width="30" />
-            <h6 style="margin-left: 10px;">Smart Report App</h6>
+            <h6 style="margin-left: 10px; font-size: 16px">Smart Report App</h6>
         </a>
         <div class="sidebar-toggler not-active">
             <span></span>
@@ -13,14 +13,14 @@
     <div class="sidebar-body">
       @if (Auth::user()->role == 'admin')
       <ul class="nav">
-        <li class="nav-item nav-category">Main</li>
+        <li class="nav-item nav-category" style="font-size: 15px">Main</li>
         <li class="nav-item">
           <a href="{{ route('dashboard') }}" class="nav-link">
             <i class="link-icon" data-feather="box"></i>
             <span class="link-title">Dashboard</span>
           </a>
         </li>
-        <li class="nav-item nav-category">web apps</li>
+        <li class="nav-item nav-category" style="font-size: 15px">web apps</li>
         <li class="nav-item {{ active_class(['admin/akun-dokter/*']) }}">
           <a href="{{ route('akun-dokter.index') }}" class="nav-link">
             <i class="link-icon" data-feather="users"></i>
@@ -102,7 +102,7 @@
             <span class="link-title" style="position: relative; display: inline-block;">Chat</span>
             <span class="badge bg-success" style="position: absolute; top: 0; right: 0;">{{ $total_unread_chat }}</span>
           </a>
-        </li>        
+        </li>
         {{-- <li class="nav-item {{ active_class(['admin/konsultasi-pilih/*']) }}">
           <a href="{{ route('konsultasi.pilih') }}" class="nav-link">
             <i class="link-icon" data-feather="message-square"></i>

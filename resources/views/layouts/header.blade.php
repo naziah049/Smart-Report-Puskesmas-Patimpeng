@@ -2,7 +2,7 @@
     <a href="#" class="sidebar-toggler">
         <i data-feather="menu"></i>
     </a>
-    <div class="navbar-content">
+    <div class="navbar-content" style="background-color: white;">
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button"
